@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
+import {LoginButton} from './styledComponents'
 
 import './index.css'
 
@@ -76,7 +77,7 @@ class Login extends Component {
           <div className="image-container">
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
-              alt="nxt watch logo"
+              alt="website logo"
               className="website-logo"
             />
           </div>
@@ -120,9 +121,9 @@ class Login extends Component {
           </div>
 
           <div className="login-button-container">
-            <button type="submit" className="login-button-style">
+            <LoginButton type="submit" className="login-button-style">
               Login
-            </button>
+            </LoginButton>
           </div>
           {isShowingErrorMsg && <p className="error-msg">{errorMsg}</p>}
         </form>

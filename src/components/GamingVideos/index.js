@@ -36,7 +36,7 @@ class GamingVideos extends Component {
     this.getVideos()
   }
 
-  getVideo = async () => {
+  getVideos = async () => {
     this.setState({apiStatus: apiStatusConstants.inProgress})
     const jwtToken = Cookies.get('jwt_token')
     const url = 'https://apis.ccbp.in/videos/gaming'
