@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const VideoDetailViewContainer = styled.div`
-  background-color: ${props => props.bgColor};
+  background-color: ${props => (props.bgColor ? '#0f0f0f' : '#f9f9f9')};
   min-height: 100vh;
   margin-top: 60px;
   margin-bottom: 60px;

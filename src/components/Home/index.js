@@ -100,6 +100,7 @@ class Home extends Component {
 
   renderVideosView = () => {
     const {homeVideos} = this.state
+
     return <HomeVideos homeVideos={homeVideos} onRetry={this.onRetry} />
   }
 

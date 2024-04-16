@@ -35,7 +35,7 @@ export const RetryButton = styled.button`
   font-family: 'Roboto';
   font-size: 15px;
 `
-export const VideoCardList = styled.li`
+export const VideoCardList = styled.ul`
   list-style-type: none;
   padding: 0;
   display: flex;

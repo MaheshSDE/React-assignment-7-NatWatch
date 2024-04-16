@@ -30,16 +30,16 @@ class VideoDetailView extends Component {
   }
 
   formattedData = data => ({
-    id: data.Video_details.id,
-    title: data.Video_details.title,
-    videoUrl: data.Video_details.video_url,
-    thumbnailUrl: data.Video_details.thumbnail_url,
-    viewCount: data.Video_details.view_count,
-    publishedAt: data.Video_details.published_at,
-    description: data.Video_details.description,
-    name: data.Video_details.channel.name,
-    profileImageUrl: data.Video_details.channel.profile_image_url,
-    subscriberCount: data.Video_details.channel.subscriber_count,
+    id: data.video_details.id,
+    title: data.video_details.title,
+    videoUrl: data.video_details.video_url,
+    thumbnailUrl: data.video_details.thumbnail_url,
+    viewCount: data.video_details.view_count,
+    publishedAt: data.video_details.published_at,
+    description: data.video_details.description,
+    name: data.video_details.channel.name,
+    profileImageUrl: data.video_details.channel.profile_image_url,
+    subscriberCount: data.video_details.channel.subscriber_count,
   })
 
   getVideosDetails = async () => {
@@ -130,7 +130,7 @@ class VideoDetailView extends Component {
       <ThemeAndVideoContext.Consumer>
         {value => {
           const {isDarkTheme} = value
-          const bgColor = isDarkTheme ? '#0f0f0f' : '#f9f9f9'
+          const bgColor = isDarkTheme
 
           return (
             <>
